@@ -1,2 +1,4 @@
 env/
 datasets/
+.~lock.*
+com-youtube.ungraph.txt
