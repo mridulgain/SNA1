@@ -8,6 +8,7 @@ from scipy.optimize import curve_fit
 def fit_func(x,a):
 	 return (x**-a)/zetac(a)
 
+# Degree distribution and Power law exponent calculation
 def degree_distribution(g):
 	dd = {}
 	for n in g.nodes():
@@ -20,10 +21,10 @@ def degree_distribution(g):
 	no_of_nodes = len(g.nodes())
 	pk = [count/no_of_nodes for (deg, count) in deg_count]
 	popt, pcov = curve_fit(fit_func, k, pk)
-	perr = np.sqrt(np.diag(pcov))
-	print("Power law exponent : %5.5f (with standard deviation error : %5.5f)" %(popt, perr))
+	perr = np.sqrt(np.diag(pcov))# standard deviation error
+	print("Power law exponent : %5.5f (with standard deviation error : %5.5f)" %(popt, perr))# power law exponent
 	# visualisation
-	plt.plot(k, pk, 'b-', label='data')
+	plt.plot(k, pk, 'b-', label='data') # degree distribution
 	plt.plot(k, fit_func(k, *popt), 'r-', label='fit: alpha = %5.3f \nstandard deviation errr = %5.5f' %(popt, perr))
 	plt.xlabel('k')
 	plt.ylabel('p(k)')
