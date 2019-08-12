@@ -1,6 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-g = nx.read_edgelist('p2p-Gnutella08.txt')
+g = nx.read_edgelist('el-email-Eu-core.txt')
 dd = {}
 for n in g.nodes():
 	deg = g.degree(n)
@@ -13,7 +13,7 @@ ax = fig.add_subplot (111)
 k = [deg for (deg,count) in deg_count]
 no_of_nodes = len(g.nodes())
 pk = [count/no_of_nodes for (deg, count) in deg_count]
-ax.plot(k, pk)
-plt.title("Degree  Distribution")
-fig.savefig("degree_distribution.png")
+ax.plot(k,pk)
+plt.title("Degree  Distribution"+"abd")
+#fig.savefig("degree_distribution.png")
 plt.show()
