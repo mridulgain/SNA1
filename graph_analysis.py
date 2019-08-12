@@ -1,3 +1,8 @@
+'''
+    Social Network Analysis Assignment
+    University of Hyderabad
+    Monsoon Semester, 2019
+'''
 import sys
 import numpy as np
 import networkx as nx
