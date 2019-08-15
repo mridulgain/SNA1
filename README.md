@@ -1,5 +1,5 @@
 # SNA2019 assignment 1
-The following properties of a given network can be calculeted
+The following properties of a given network can be calculeted using this project...
 + Number of connected components
 + Maximum degree
 + average Degree
