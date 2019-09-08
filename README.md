@@ -1,4 +1,5 @@
-# SNA2019 assignment 1
+# Social network analysis
+### Class Assignment
 The following properties of a given network can be calculeted using this project...
 + Number of connected components
 + Maximum degree
@@ -8,13 +9,14 @@ The following properties of a given network can be calculeted using this project
 + Average path length
 + Diameter
 ## **Demo**
-![Finding Network properties](https://github.com/mridulgain/SNA1/blob/master/graph_properties.png)
+![Finding Network properties](graph_properties.png)
 ## **Degree distribution following power law**
-![](https://github.com/mridulgain/SNA1/blob/master/Degree%20%20Distribution%20for%20%3Cel-Gnutella08_undirected%3E.png)
-![](https://github.com/mridulgain/SNA1/blob/master/Degree%20%20Distribution%20for%20%3Cel-email-Eu-directed%3E.png)
-![](https://github.com/mridulgain/SNA1/blob/master/Degree%20%20Distribution%20for%20%3Cel-facebook_undirected%3E.png)
+![](Degree%20%20Distribution%20for%20%3Cel-Gnutella08_undirected%3E.png)
+![](Degree%20%20Distribution%20for%20%3Cel-email-Eu-directed%3E.png)
+![](Degree%20%20Distribution%20for%20%3Cel-facebook_undirected%3E.png)
 
-
+*Go through the [project report](project_summary.pdf) for more insights*
+#
 @misc{snapnets,
   author       = {Jure Leskovec and Andrej Krevl},
   title        = {{SNAP Datasets}: {Stanford} Large Network Dataset Collection},
